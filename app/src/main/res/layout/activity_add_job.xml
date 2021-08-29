@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="20dp" tools:context=".AddJob" tools:ignore="HardcodedText">
+
+        <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:id="@+id/ProjectDetailsLayout" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" android:hint="Job Title">
+
+            <com.google.android.material.textfield.TextInputEditText android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/ProjectTitle" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:id="@+id/BudgetAddLayout" app:layout_constraintStart_toStartOf="@+id/ProjectDetailsLayout" app:layout_constraintTop_toBottomOf="@+id/ProjectDetailsLayout" android:hint="Budget Range (ex. 100USD - 150USD)">
+
+            <com.google.android.material.textfield.TextInputEditText android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/BudgetAdd" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/TimeTobeDoneAtLayout" android:layout_marginTop="30dp" app:layout_constraintStart_toStartOf="@+id/BudgetAddLayout" app:layout_constraintTop_toBottomOf="@+id/BudgetAddLayout" android:hint="Expected Duration">
+
+            <com.google.android.material.textfield.TextInputEditText android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/TimeTobeDoneAt" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/LocationLayout" app:layout_constraintStart_toStartOf="@+id/TimeTobeDoneAtLayout" app:layout_constraintTop_toBottomOf="@+id/TimeTobeDoneAtLayout" android:hint="Job Location" android:layout_marginTop="30dp">
+
+            <com.google.android.material.textfield.TextInputEditText android:id="@+id/Location" android:layout_width="match_parent" android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/DetailsLayout" app:layout_constraintStart_toStartOf="@+id/LocationLayout" app:layout_constraintTop_toBottomOf="@+id/LocationLayout" android:hint="Job Details" android:layout_marginTop="30dp">
+
+            <com.google.android.material.textfield.TextInputEditText  android:id="@+id/Details" android:layout_width="match_parent" android:layout_height="wrap_content" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:id="@+id/Upload"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_weight="1" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "467254824139",
+    "project_id": "jobly-b30c2",
+    "storage_bucket": "jobly-b30c2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:467254824139:android:5187d16622ea1833bf5f4e",
+        "android_client_info": {
+          "package_name": "com.Engineering.jobly"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "467254824139-l1521jrmo3gp8qn5rtg7q1l04i3tels3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCBatuWmbFI7e6q5NPpUY61t2_Cy2OrfNU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "467254824139-l1521jrmo3gp8qn5rtg7q1l04i3tels3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

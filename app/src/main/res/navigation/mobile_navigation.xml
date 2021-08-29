@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_jobs">
+
+    <fragment
+        android:id="@+id/navigation_chats"
+        android:name="com.Engineering.jobly.ui.Chats.ChatsFragment"
+        android:label="Chats"
+        tools:layout="@layout/fragment_chats" />
+    <fragment
+        android:id="@+id/navigation_search"
+        android:name="com.Engineering.jobly.ui.search.SearchFragment"
+        android:label="Search"
+        tools:layout="@layout/fragment_search" />
+
+    <fragment
+        android:id="@+id/navigation_jobs"
+        android:name="com.Engineering.jobly.ui.Jobs.DashboardFragment"
+        android:label="Jobs"
+        tools:layout="@layout/fragment_jobs" />
+
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.Engineering.jobly.ui.Profile.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile" />
+</navigation>
