@@ -11,7 +11,7 @@ public class User implements Serializable {
     String Location ="N/A";
     String Username ="N/A";
     String UserId;
-    String Bio ="";
+    String Bio ="N/A";
 
     public String getBio() {
         return Bio;
