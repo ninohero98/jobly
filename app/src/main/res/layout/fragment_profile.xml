@@ -119,15 +119,16 @@
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Contact"
-            android:id="@+id/ProfileContactSection"
-            android:gravity="center"/>
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
             android:text="Edit"
             android:id="@+id/ProfileEditSection"
             android:gravity="center"/>
+
+        <Button
+            android:id="@+id/ProfileContactSection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Contact" />
     </LinearLayout>
 
 
