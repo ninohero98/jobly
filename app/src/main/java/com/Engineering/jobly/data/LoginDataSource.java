@@ -1,6 +1,7 @@
 package com.Engineering.jobly.data;
 
 import com.Engineering.jobly.data.model.LoggedInUser;
+import com.Engineering.jobly.data.Result;
 
 import java.io.IOException;
 

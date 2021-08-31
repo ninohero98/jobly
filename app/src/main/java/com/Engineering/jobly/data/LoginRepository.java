@@ -1,6 +1,7 @@
 package com.Engineering.jobly.data;
 
 import com.Engineering.jobly.data.model.LoggedInUser;
+import com.Engineering.jobly.data.Result;
 
 /**
  * Class that requests authentication and user information from the remote data source and

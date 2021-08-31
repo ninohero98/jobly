@@ -1,64 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    android:layout_height="match_parent">
 
     <TextView
+        android:id="@+id/TitleofProject"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         android:textSize="15pt"
-        android:id="@+id/TitleofProject" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.core.widget.NestedScrollView
-        android:layout_width="300dp"
-        android:layout_height="400dp"
         android:id="@+id/DescriptionScrollable"
-        app:layout_constraintStart_toStartOf="@id/TitleofProject"
-        app:layout_constraintTop_toBottomOf="@id/TitleofProject"
-        android:layout_marginTop="10dp">
-<TextView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:textSize="8pt"
-    android:id="@+id/DescriptionSection">
-</TextView>
+        android:layout_width="280dp"
+        android:layout_height="362dp"
+        android:layout_marginTop="44dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/DescriptionSection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="8pt"></TextView>
     </androidx.core.widget.NestedScrollView>
 
     <TextView
-        android:layout_width="fill_parent"
-        android:textAlignment="center"
-        android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="@id/DescriptionScrollable"
-        app:layout_constraintTop_toBottomOf="@id/DescriptionScrollable"
         android:id="@+id/BudgetDescription"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:textSize="10pt"/>
+        android:textAlignment="center"
+        android:textSize="10pt"
+        app:layout_constraintStart_toStartOf="@id/DescriptionScrollable"
+        app:layout_constraintTop_toBottomOf="@id/DescriptionScrollable" />
 
     <TextView
         android:id="@+id/LocationDescrition"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintHorizontal_weight="0.25"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:textSize="8pt"
         android:layout_margin="20dp"
-        android:textAlignment="center"/>
+        android:layout_marginStart="64dp"
+        android:layout_marginBottom="36dp"
+        android:textAlignment="center"
+        android:textSize="8pt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_weight="0.25"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/ContactButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAlignment="center"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
         android:text="Publisher"
-        app:layout_constraintHorizontal_weight="0.75"
+        android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
-
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_weight="0.75" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
