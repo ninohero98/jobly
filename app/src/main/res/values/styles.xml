@@ -38,8 +38,8 @@
 
 
     <style name="AppTheme" parent="Theme.AppCompat.Light">
-        <item name="colorPrimary">#6200EE</item>
-        <item name="colorAccent">#F06997</item>
+        <item name="colorPrimary">#FF8b00</item>
+        <item name="colorAccent">#08227E</item>
         <item name="android:textColor">#444444</item>
 
     </style>
