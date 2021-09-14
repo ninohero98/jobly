@@ -76,7 +76,7 @@ public class PublisherProfile extends AppCompatActivity {
                 Location.setText(mUser.getLocation());
                 Bio.setText(mUser.getBio());
 
-                B.setText("Chat With Him");
+                B.setText("Contact Us");
                 B.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {

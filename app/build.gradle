@@ -2,6 +2,14 @@ apply plugin: 'com.android.application'
 apply plugin: 'com.google.gms.google-services'
 
 android {
+    signingConfigs {
+        debug {
+            storeFile file('C:\\Users\\nino_\\Desktop\\keystore.jks')
+            storePassword '2058#041998Ninohero'
+            keyAlias 'key1'
+            keyPassword '2058#041998Ninohero'
+        }
+    }
     compileSdkVersion 30
     buildToolsVersion "30.0.3"
 
@@ -18,13 +26,14 @@ android {
         versionName "1.0"
 
     }
-
     buildTypes {
         release {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            applicationIdSuffix 'jobly'
+            versionNameSuffix 'app'
+            signingConfig signingConfigs.debug
         }
     }
+
 
 }
 
